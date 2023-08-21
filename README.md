@@ -1,2 +1,5 @@
 # Microservice
 Simple microservice Project
+
+I am creating a Java project using microservices. I am creating a simple Quiz app using Sprigboot, Spring Cloud, and Spring Data JPA. There are create three microservices. The First Service is the Question service this service. I am creating a POST method using REst API for Adding questions to the database. I am creating multiple Rest API methods handling all crud operations on the Question service. In the Question service, I get data from a database filter by ID and Question category.
+The second Microservice is the Quiz service. In the second service, I created Quiz by category and stored data in the database. Then I give the test, collect all responses using the post method using Rest API, compare answers with correct answers in-store in the database and then show the result. In both services, communication uses Spring Cloud OpenFeign. The third service is the Service registry, which registers all small services in the service registry. This service holds information about all client service applications. This service is also known as Discovery Server.
